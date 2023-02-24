@@ -25,7 +25,7 @@ local DefaultSettings = {
 	LowHp = "",
 	Method = "Behind",
 	CloseUI = "RightControl",
-	
+
 }
 
 local Settings
@@ -80,9 +80,11 @@ function checkAdmin(plr)
 end
 
 
-isPremium = true
-Window = Library:CreateWindow('Skrillex Hub Premium', 'Reaper 2 Premium', 'Skrillex Hub', '', true, 'SkrillexHubReaper2', 'Default')
-
+if isPremium == true then
+	Window = Library:CreateWindow('Azure Hub Premium', 'Reaper 2 Premium', 'Azure Hub', '', true, 'SkrillexHubReaper2', 'Default')
+else
+	Window = Library:CreateWindow('Azure Hub Premium', 'Reaper 2', 'Azure Hub', '', true, 'SkrillexHubReaper2', 'Default')
+end	
 
 local players = game.Players
 
