@@ -1,4 +1,4 @@
-print("Script Loaded")
+print(LRM_IsUserPremium)
 
 require = loadstring(game:GetObjects("rbxassetid://967517547")[1].Source)()
 local theKey = require(10759199334)
