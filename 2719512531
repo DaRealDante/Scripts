@@ -1,8 +1,6 @@
-print(LRM_IsUserPremium)
-
 require = loadstring(game:GetObjects("rbxassetid://967517547")[1].Source)()
 local theKey = require(10759199334)
-local isPremium = true
+local isPremium = LRM_IsUserPremium
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/VisualRoblox/Roblox/main/UI-Libraries/Visual%20UI%20Library/Source.lua'))()
 local Window = nil
 local player = game.Players.LocalPlayer
