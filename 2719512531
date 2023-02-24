@@ -2,7 +2,7 @@ require = loadstring(game:GetObjects("rbxassetid://967517547")[1].Source)()
 local theKey = require(10759199334)
 local isPremium = false
 if LRM_IsUserPremium then
-isPremium = LRM_IsUserPremium
+	isPremium = LRM_IsUserPremium
 end
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/VisualRoblox/Roblox/main/UI-Libraries/Visual%20UI%20Library/Source.lua'))()
 local Window = nil
@@ -84,9 +84,9 @@ end
 
 
 if isPremium == true then
-	Window = Library:CreateWindow('Azure Hub Premium', 'Reaper 2 Premium', 'Azure Hub', '', true, 'SkrillexHubReaper2', 'Default')
+	Window = Library:CreateWindow('Azure Hub Premium', 'Reaper 2 Premium', 'Azure Hub Pro', '', true, 'SkrillexHubReaper2', 'Default')
 else
-	Window = Library:CreateWindow('Azure Hub Premium', 'Reaper 2', 'Azure Hub', '', true, 'SkrillexHubReaper2', 'Default')
+	Window = Library:CreateWindow('Azure Hub', 'Reaper 2', 'Azure Hub', '', true, 'SkrillexHubReaper2', 'Default')
 end	
 
 local players = game.Players
